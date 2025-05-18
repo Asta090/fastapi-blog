@@ -6,7 +6,7 @@ A full-stack blog application with user authentication and CRUD operations.
 
 ```
 .
-├── app/           # FastAPI backend
+├── app/              # FastAPI backend
 │   ├── core/         # Utility functions hashing,oauth2,token
 │   |---db/           # DataBase Connection
 |   |---models/       # Models
