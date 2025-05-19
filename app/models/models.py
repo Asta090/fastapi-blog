@@ -1,5 +1,5 @@
 
-from sqlmodel import Field, Session, SQLModel,  select, Relationship
+from sqlmodel import Field, Session, SQLModel, Relationship
 from typing import Optional,List
 
 class Blog(SQLModel, table=True):
