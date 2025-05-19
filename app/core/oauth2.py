@@ -3,9 +3,9 @@ from fastapi.security import OAuth2PasswordBearer
 
 from jose import JWTError
 from . import token
-from ..models import models
-from ..database import database
-from ..schemas import schemas
+from app.models import models
+from app.database import database
+from app.schemas import schemas
 
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="login")
