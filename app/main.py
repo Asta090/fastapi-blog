@@ -1,10 +1,10 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from blog.database import engine,SessionDep
+from app.database.database import engine,SessionDep
 from sqlmodel import Session, SQLModel
 
-from blog.routers import blog,user,authentication
+from app.routers import blog,user,authentication
 
 
 app = FastAPI()
