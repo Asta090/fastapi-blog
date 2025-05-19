@@ -1,8 +1,10 @@
 from fastapi import APIRouter, HTTPException, status, Depends
-from .. import schemas, models, token
+from app.schemas import schemas
+from app.models import models
+from app.core import token 
 from fastapi.security import OAuth2PasswordRequestForm
-from ..database import SessionDep
-from ..hashing import Hash
+from app.database.database import SessionDep
+from app.core.hashing import Hash
 
 
 router=APIRouter(
